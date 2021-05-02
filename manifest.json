@@ -1,0 +1,13 @@
+{
+  "name": "Bookmark New Tab Page",
+  "description": "Shows the bookmarks on my bookmarks bar in my new tab page",
+  "version": "0.1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["bookmarks", "storage"],
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  }
+}
